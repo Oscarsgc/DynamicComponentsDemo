@@ -7,6 +7,14 @@
         "title": "New Chart Widget",
         "widgetType": "multiBarChart"
       }
+    },
+    {
+      "id": 18805,
+      "dashboardId": 1,
+      "content": {
+        "title": "New Chart Widget",
+        "widgetType": "pieChart"
+      }
     }
   ]
 }

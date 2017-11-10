@@ -12,6 +12,8 @@ import { WidgetCmpt } from './components/views/dashboard/widget.component';
 import { DashboardComponent } from './components/views/dashboard/exampleDashboard/dashboard.component';
 import { HttpService } from './services/http.service';
 import { BarChartComponent } from './components/generics/widgets/charts/bar-chart/bar-chart.component';
+import { PieChartComponent } from './components/generics/widgets/charts/pie-chart/pie-chart.component';
+import { LineChartComponent } from './components/generics/widgets/charts/line-chart/line-chart.component';
 
 
 @NgModule({
@@ -25,6 +27,8 @@ import { BarChartComponent } from './components/generics/widgets/charts/bar-char
     // Widgets
     WidgetCmpt,
     BarChartComponent,
+    PieChartComponent,
+    LineChartComponent,
   ],
   imports: [
     BrowserModule,

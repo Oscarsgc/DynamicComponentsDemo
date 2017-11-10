@@ -2,6 +2,8 @@ import { ViewContainerRef, ComponentFactoryResolver } from "@angular/core";
 import { HttpService } from "../../../services/http.service";
 import { element } from "protractor";
 import { BarChartComponent } from "../../generics/widgets/charts/bar-chart/bar-chart.component";
+import { PieChartComponent } from "../../generics/widgets/charts/pie-chart/pie-chart.component";
+import { LineChartComponent } from "../../generics/widgets/charts/line-chart/line-chart.component";
 
 export abstract class GenericDashboard {
     protected widgets: any = [];
@@ -11,8 +13,8 @@ export abstract class GenericDashboard {
     protected viewContainerRef: ViewContainerRef;
     protected httpService: HttpService;
     private availableWidgets: any = [
-        { key: "pieChart", value: "PieComponent" },
-        { key: "lineChart", value: "LineComponent" },
+        { key: "pieChart", value: PieChartComponent },
+        { key: "lineChart", value: LineChartComponent },
         { key: "multiBarChart", value: BarChartComponent }
     ]
 
