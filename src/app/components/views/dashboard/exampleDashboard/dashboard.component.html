@@ -8,7 +8,7 @@
             <b>Widgets will appear in this container...</b>
         </div>
         <div [ngClass]="columnWidth" *ngFor="let widget of widgets">
-            <widget-component [widgetObj]="widget.component" (deletewidget)="deletewidget($event)" [widgetType]="widget.component" [data]="widget.data "></widget-component>
+            <widget-component [widgetObj]="widget.component" (deleteWidget)="deleteWidget($event)" [widgetType]="widget.component" [data]="widget.data "></widget-component>
         </div>
     </div>
 </div>

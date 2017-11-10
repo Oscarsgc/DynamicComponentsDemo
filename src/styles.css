@@ -16,3 +16,34 @@ html {
       background-color: #222222;
       border-radius: 5px;
   }
+
+  .to-right {
+    float: right;
+}
+
+.panel-button {
+    float: right;
+    margin-top: -21px;
+    margin-right: 2px;
+    border-radius: 7px;
+    padding: 5px;
+}
+
+.btn-default.dropdown-toggle {
+    top: 0px;
+    margin-right: 8px;
+    border-radius: 5px;
+    color: #000;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 6px 6px;
+}
+
+.btn-default.dropdown-toggle:hover,
+.btn-default.dropdown-toggle:focus,
+.btn-default.dropdown-toggle:active:focus {
+    border: 1px solid #ccc!important;
+    background-color: #ededed !important;
+    color: #000;
+    outline: none;
+}
