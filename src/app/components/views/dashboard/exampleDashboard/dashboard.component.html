@@ -1,0 +1,14 @@
+<widgets-bar (createWidget)="createWidget($event)"></widgets-bar>
+
+<h4 class="page-header">Demo Dashboard</h4>
+
+<div class="container-fluid">
+    <div class="panel-body">
+        <div *ngIf="widgets.length == 0" style="text-align: center;">
+            <b>Widgets will appear in this container...</b>
+        </div>
+        <div [ngClass]="columnWidth" *ngFor="let widget of widgets">
+            <widget-component [widgetObj]="widget.component" (deletewidget)="deletewidget($event)" [widgetType]="widget.component" [data]="widget.data "></widget-component>
+        </div>
+    </div>
+</div>

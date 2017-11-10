@@ -1,0 +1,12 @@
+{
+  "widgets": [
+    {
+      "id": 84254,
+      "dashboardId": 1,
+      "content": {
+        "title": "New Chart Widget",
+        "widgetType": "multiBarChart"
+      }
+    }
+  ]
+}

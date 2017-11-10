@@ -1,0 +1,25 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4 class="panel-title">
+      {{content.title}}
+    </h4>
+    <div class="dropdown to-right">
+      <button type="button" class="btn btn-default btn-xs panel-button" style="margin-right: 8px;" data-toggle="dropdown" data-widget="settings">
+        <span class="glyphicon glyphicon-cog"></span>
+      </button>
+      <ul class="dropdown-menu">
+        <li *ngIf="widgetId > 100">
+          <a (click)="deleteWidget()">Delete</a>
+        </li>
+        <li *ngIf="widgetId > 100" role="separator" class="divider"></li>
+        <li>
+          <!-- <a (click)="settingsModal.open()">Settings</a> -->
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="panel-body">
+    <!-- <img> -->
+    <p>ALOHA MUNDO</p>
+  </div>
+</div>
