@@ -9,12 +9,9 @@ import { Widget } from '../../widget.component';
 })
 export class BarChartComponent extends Widget {
 
-  constructor() {
-    super();
+  constructor(httpService: HttpService) {
+    super(httpService);
   }
 
-  updateWidget(obj: any) {
-    throw new Error("Method not implemented.");
-  }
 
 }

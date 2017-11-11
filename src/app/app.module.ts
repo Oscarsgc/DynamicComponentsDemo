@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, ANALYZE_FOR_ENTRY_COMPONENTS } from '@angular/core';
 import { HttpModule } from '@angular/http';
+import { BsModalModule } from 'ng2-bs3-modal/ng2-bs3-modal';
+import { FormsModule } from "@angular/forms";
 
 import { AppComponent } from './app.component';
 
@@ -32,7 +34,9 @@ import { LineChartComponent } from './components/generics/widgets/charts/line-ch
   ],
   imports: [
     BrowserModule,
-    HttpModule
+    HttpModule,
+    BsModalModule,
+    FormsModule
   ],
   providers: [
     HttpService,

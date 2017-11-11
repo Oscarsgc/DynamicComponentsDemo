@@ -1,20 +1,3 @@
 {
-  "widgets": [
-    {
-      "id": 18805,
-      "dashboardId": 1,
-      "content": {
-        "title": "New Chart Widget",
-        "widgetType": "pieChart"
-      }
-    },
-    {
-      "id": 8710,
-      "dashboardId": 1,
-      "content": {
-        "title": "New Chart Widget",
-        "widgetType": "lineChart"
-      }
-    }
-  ]
+  "widgets": []
 }

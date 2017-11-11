@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Widget } from '../../widget.component';
+import { HttpService } from '../../../../../services/http.service';
 
 @Component({
   selector: 'lineChart',
@@ -8,11 +9,8 @@ import { Widget } from '../../widget.component';
 })
 export class LineChartComponent extends Widget {
 
-  constructor() {
-    super();
+  constructor(httpService: HttpService) {
+    super(httpService);
   }
 
-  updateWidget(obj: any) {
-    throw new Error("Method not implemented.");
-  }
 }

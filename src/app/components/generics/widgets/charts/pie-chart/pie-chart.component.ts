@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Widget } from '../../widget.component';
+import { HttpService } from '../../../../../services/http.service';
 
 @Component({
   selector: 'app-pie-chart',
@@ -8,11 +9,7 @@ import { Widget } from '../../widget.component';
 })
 export class PieChartComponent extends Widget {
 
-  constructor() {
-    super();
-  }
-
-  updateWidget(obj: any) {
-    throw new Error("Method not implemented.");
+  constructor(httpService: HttpService) {
+    super(httpService);
   }
 }

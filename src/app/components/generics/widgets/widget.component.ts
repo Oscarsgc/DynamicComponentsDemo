@@ -1,5 +1,6 @@
 import { Input, ViewChild, Output, EventEmitter } from "@angular/core";
 import { Subscription } from "rxjs";
+import { HttpService } from "../../../services/http.service";
 
 export abstract class Widget {
     @Input() content: any;
@@ -10,10 +11,19 @@ export abstract class Widget {
     protected subscription: Subscription;
     protected options: any;
 
-    constructor() {
+    constructor(private httpService: HttpService) {
     }
 
-    abstract updateWidget(obj: any): any;
+    protected update() {
+        let widget = {
+            id: this.widgetObj._component.widgetId,
+            dashboardId: this.widgetObj._component.dashboardId,
+            content: this.widgetObj._component.content
+        }
+        let url = "http://localhost:3000/api/widgets/" + widget.id;
+        this.httpService.put(url, widget).subscribe(response => {
+        });
+    }
 
     protected delete() {
         this.deleteWidget.emit(this.widgetObj);

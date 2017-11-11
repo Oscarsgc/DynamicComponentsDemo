@@ -114,6 +114,10 @@ export abstract class GenericDashboard {
         return availableWidths[items - 1];
     }
 
+    updateWidget(widgetObj: any) {
+        this.storeWidget(widgetObj);
+    }
+
     deleteWidget(widgetObj: any) {
         let widget = this.widgets.filter(item => item.data.widgetId == widgetObj._component.widgetId)[0]
         let index = this.widgets.indexOf(widget);
